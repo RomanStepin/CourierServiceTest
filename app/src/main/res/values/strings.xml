@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Courier Service Test</string>
+    <string name="search">Поиск по модели</string>
+    <string name="brand">Марка</string>
+    <string name="Модель">Модель</string>
+    <string name="save">Сохранить</string>
+    <string name="cars_list_placeholder">Добавьте автомобили...</string>
+</resources>

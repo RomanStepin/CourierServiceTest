@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigatio"
+    app:startDestination="@id/carsFragment">
+
+    <fragment
+        android:id="@+id/carsFragment"
+        android:name="com.example.courierservicetest.ai.CarsFragment.CarsFragment"
+        android:label="fragment_cars"
+        tools:layout="@layout/fragment_cars" >
+        <action
+            android:id="@+id/action_carsFragment_to_editCarsFragment"
+            app:destination="@id/editCarsFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCarsFragment"
+        android:name="com.example.courierservicetest.ai.EditCarsFragment.EditCarFragment"
+        android:label="fragment_edit_cars"
+        tools:layout="@layout/fragment_edit_car" >
+        <action
+            android:id="@+id/action_editCarsFragment_to_carsFragment"
+            app:destination="@id/carsFragment"
+            app:popUpTo="@id/carsFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+</navigation>
